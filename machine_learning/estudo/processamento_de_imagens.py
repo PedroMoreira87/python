@@ -52,7 +52,7 @@ for img in image_list:
     resized_image_list.append(img)
 
 for (i, new) in enumerate(resized_image_list):
-    new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine-learning/ddd/images/resized_images/', i + 1,
+    new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine_learning/ddd/images/resized_images/', i + 1,
                              '.jpg'))
 
 print(image_list[0].size)
@@ -66,7 +66,7 @@ for i in range(4):
         img = img.rotate(rotate)
         rotated_image_list.append(img)
     for (j, new) in enumerate(rotated_image_list):
-        new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine-learning/ddd/images/rotated_images/',
+        new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine_learning/ddd/images/rotated_images/',
                                  j + 1, '.jpg'))
     rotate += 90
 
@@ -76,6 +76,6 @@ for img in image_list:
     img = img.convert('LA')
     grayscale_image_list.append(img)
 for (i, new) in enumerate(grayscale_image_list):
-    new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine-learning/ddd/images/grayscale_images/', i + 1,
+    new.save('{}{}{}'.format('C:/Users/Pedro/PycharmProjects/machine_learning/ddd/images/grayscale_images/', i + 1,
                              '.png'))
 
